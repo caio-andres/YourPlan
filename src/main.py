@@ -1,4 +1,4 @@
-from app.src.agents.pdi_agent import pdi_agent
+from src.agents.pdi_agent import pdi_agent
 
 
 def main():

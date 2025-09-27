@@ -1,6 +1,6 @@
-from app.src.agents.system_prompt.system_prompt_pdi_agent import SYSTEM_PROMPT_PDI_AGENT
-from app.src.util.current_datetime import current_datetime
-from app.src.auth.openai import client
+from src.agents.system_prompt.system_prompt_pdi_agent import SYSTEM_PROMPT_PDI_AGENT
+from src.util.current_datetime import current_datetime
+from src.settings.openai import client
 
 
 user_prompt = input("Diga sobre você: ")
