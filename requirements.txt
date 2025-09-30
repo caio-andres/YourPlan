@@ -4,3 +4,4 @@ dotenv
 chainlit
 plotly
 streamlit
+faiss-cpu

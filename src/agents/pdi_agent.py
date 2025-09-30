@@ -3,15 +3,13 @@ from src.util.current_datetime import current_datetime
 from src.settings.openai import client
 
 
-user_prompt = input("Diga sobre você: ")
-
-
-def pdi_agent():
+def pdi_agent(user_prompt, near_doc):
     message = client.responses.create(
         model="gpt-4",
         input=[
             {"role": "developer", "content": f"Data e tempo atual: {current_datetime}"},
             {"role": "developer", "content": SYSTEM_PROMPT_PDI_AGENT},
+            {"role": "developer", "content": near_doc},
             {"role": "user", "content": user_prompt},
         ],
     )
